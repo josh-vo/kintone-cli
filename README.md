@@ -140,6 +140,7 @@ Sample `config.json` file:
             "js": "{YOUR_APP_NAME}/{PATH_TO_YOUR_CONFIG_JS}"
         },
         "icon": "{YOUR_APP_NAME}/{PATH_TO_YOUR_ICON}",
+        "version": "{PLUGIN_VERSION}"/{PLUGIN_VERSION_NUMBER}
     }
 }
 ```
@@ -165,6 +166,7 @@ Sample `config.json` file:
 | uploadConfig.config.css |      | Array&lt;String&gt;  | CSS files / URLs for kintone plugin's config page |
 | uploadConfig.config.required_params |      | Array&lt;String&gt;  | An array of parameters that are required to be filled in in the Plug-in Settings page. Must be between 1 to 64 ASCII characters. |
 | uploadConfig.icon | Plugin only     | String  | Plugin's icon |
+| uploadConfig.version | Plugin only     | String or Integer  | Plugin's version |
 
 ### 3. Start dev
 ``
@@ -231,6 +233,11 @@ Save authentication credentials into ``auth.json`` file.
 Flag --app-name, --domain, --username, --password is required. 
 
 Flag --proxy is required when the flag --use-proxy is set.
+
+## Contributing
+
+We welcome contributions to kintone-cli.
+If you have a question, feature request, or bug report, please register [GitHub issue](https://github.com/kintone-labs/kintone-cli/issues/new/choose). Pull requests are also welcome when you find trivial bugs, typos or feature requests.
 
 ## License
 MIT License
